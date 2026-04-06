@@ -4,8 +4,11 @@ using System.Text;
 
 namespace SocialNetworkingPlatform
 {
-    public class Story : Post
+    public class Reel : Post
     {
-        public Guid Id { get; set; } = Guid.NewGuid();
+        public bool Save (User user)
+        {
+            return true;
+        }
     }
 }

@@ -1,18 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using SocialNetworkingPlatform;
+using System.Text;
 
-namespace Snapchat
+namespace SocialNetworkingPlatform
 {
-    /// <summary>
-    /// Snapchat-ийн User class.
-    /// </summary>
-    public class User : SocialNetworkingPlatform.User
+    public class User
     {
-        // Snapchat-д зөвхөн байх features
-        public List<Snap> Inbox { get; set; } = new List<Snap>();
-        public List<Story> Stories { get; set; } = new List<Story>();
-        public int SnapStreak { get; set; } = 0;
+        public Guid Id { get; set; } = Guid.NewGuid();
 
+        public string Name { get; set; } = string.Empty;
+
+        public string Email { get; set; } = string.Empty;
+
+        public string Password { get; set; } = string.Empty;
     }
 }

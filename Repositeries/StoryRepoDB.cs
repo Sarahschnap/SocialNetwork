@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SocialNetworkingPlatform
+namespace SocialNetworkingPlatform.Repositeries
 {
-    public enum PostType
+    internal class StoryRepoDB
     {
-        Story,
-        Reel
     }
 }
